@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 15px;
+    min-height: 100vh;
+    background-color: #b8dcf0;
+}
+
+.con{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.btn{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.btn-tag{
+    height: 62px;
+    width: 63px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
