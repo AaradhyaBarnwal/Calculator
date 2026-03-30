@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <main>
-    <div class="con">
-        <div class="in">
-            <input type="text" class="in-tag">
+    <main>
+        <div class="con">
+            <div class="calculator">
+                <form action="">
+                    <div class="in">
+                        <input type="text" class="tag" name="display">
+                    </div>
+                    <div class="btns">
+                        <div class="btn">
+                            <input type="button" value="AC" class="btn-Tag"  onclick="display.value = '' ">
+                            <input type="button" value="DE" class="btn-Tag"  onclick="display.value = display.value.toString().slice(0,-1)">
+                            <input type="button" value="." class="btn-Tag" onclick="display.value += '.' ">
+                            <input type="button" value="/" class="btn-Tag" onclick="display.value += '/' ">
+                        </div>
+                        <div class="btn">
+                            <input type="button" value="7" class="btn-Tag" onclick="display.value += '7' ">
+                            <input type="button" value="8" class="btn-Tag" onclick="display.value += '8' ">
+                            <input type="button" value="9" class="btn-Tag" onclick="display.value += '9' ">
+                            <input type="button" value="x" class="btn-Tag" onclick="display.value += '×' ">
+                        </div>
+                        <div class="btn">
+                            <input type="button" value="6" class="btn-Tag" onclick="display.value += '6' ">
+                            <input type="button" value="5" class="btn-Tag" onclick="display.value += '5' ">
+                            <input type="button" value="4" class="btn-Tag" onclick="display.value += '4' ">
+                            <input type="button" value="-" class="btn-Tag" onclick="display.value += '−' ">
+                        </div>
+                        <div class="btn">
+                            <input type="button" value="3" class="btn-Tag" onclick="display.value += '3' ">
+                            <input type="button" value="2" class="btn-Tag" onclick="display.value += '2' ">
+                            <input type="button" value="1" class="btn-Tag" onclick="display.value += '1' ">
+                            <input type="button" value="+" class="btn-Tag" onclick="display.value += '+' ">
+                        </div>
+                        <div class="btn">
+                            <input type="button" value="00" class="btn-Tag" onclick="display.value += '00' ">
+                            <input type="button" value="0" class="btn-Tag" onclick="display.value += '0' ">
+                            <input type="button" value="=" class="btn-Tag zero" onclick="display.value += '=' ">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
         </div>
-
-        <div class="btn">
-           <div class="btn">
-
-    <button class="btn-Tag util">AC</button>
-    <button class="btn-Tag util">+/-</button>
-    <button class="btn-Tag util">%</button>
-    <button class="btn-Tag op">÷</button>
-
-    <button class="btn-Tag num">7</button>
-    <button class="btn-Tag num">8</button>
-    <button class="btn-Tag num">9</button>
-    <button class="btn-Tag op">×</button>
-
-    <button class="btn-Tag num">4</button>
-    <button class="btn-Tag num">5</button>
-    <button class="btn-Tag num">6</button>
-    <button class="btn-Tag op">−</button>
-
-    <button class="btn-Tag num">1</button>
-    <button class="btn-Tag num">2</button>
-    <button class="btn-Tag num">3</button>
-    <button class="btn-Tag op">+</button>
-
-    <button class="btn-Tag num zero">0</button>
-    <button class="btn-Tag num">.</button>
-    <button class="btn-Tag eq">=</button>
-
-</div>
-        </div>
-
-    </div>
-   </main> 
-   <script src="script.js"></script>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>

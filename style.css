@@ -19,7 +19,7 @@ body{
     width: 300px;
     border-radius: 15px;
     padding: 20px;
-    gap: 10px;
+    gap: 15px;
     background-color: white;
 }
 
@@ -34,11 +34,12 @@ body{
     border-radius: 12px;
     padding: 10px 14px;
     text-align: right;
+    margin-bottom: 7px;
     height: 55px;
     color: #4a6a7c;
 }
 
-.in-tag{
+.tag{
     background-color: transparent;
     color: #4a6a7c;
     border: none;
@@ -50,7 +51,7 @@ body{
 
 .btn-Tag{
     height: 63px;
-    width: 63px;
+    width: 100%;
     border-radius: 15px;
     color: #FAACBF;
     display: grid;
@@ -60,4 +61,10 @@ body{
     font-size: 1.5rem;
     border: none;
     background: #FDEDED;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.btns{
+    display: grid;
+    gap: 8px;
 }
