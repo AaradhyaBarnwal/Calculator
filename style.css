@@ -8,9 +8,8 @@ body{
     align-items: center;
     justify-content: center;
     padding: 15px;
-    margin: 15px;
     min-height: 100vh;
-    background-color: #b8dcf0;
+    background-color: #ddf0fb;
 }
 
 .con{
@@ -21,19 +20,44 @@ body{
     border-radius: 15px;
     padding: 20px;
     gap: 10px;
+    background-color: white;
 }
 
 .btn{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4,1fr);
-
 }
 
-.btn-tag{
-    height: 62px;
+.in{
+    background-color: #b8dcf0;
+    border-radius: 12px;
+    padding: 10px 14px;
+    text-align: right;
+    height: 55px;
+    color: #4a6a7c;
+}
+
+.in-tag{
+    background-color: transparent;
+    color: #4a6a7c;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn-Tag{
+    height: 63px;
     width: 63px;
+    border-radius: 15px;
+    color: #FAACBF;
     display: grid;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: none;
+    background: #FDEDED;
 }
