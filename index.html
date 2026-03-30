@@ -18,8 +18,9 @@
                     </div>
                     <div class="btns">
                         <div class="btn">
-                            <input type="button" value="AC" class="btn-Tag"  onclick="display.value = '' ">
-                            <input type="button" value="DE" class="btn-Tag"  onclick="display.value = display.value.toString().slice(0,-1)">
+                            <input type="button" value="AC" class="btn-Tag" onclick="display.value = '' ">
+                            <input type="button" value="DE" class="btn-Tag"
+                                onclick="display.value = display.value.toString().slice(0,-1)">
                             <input type="button" value="." class="btn-Tag" onclick="display.value += '.' ">
                             <input type="button" value="/" class="btn-Tag" onclick="display.value += '/' ">
                         </div>
@@ -27,13 +28,13 @@
                             <input type="button" value="7" class="btn-Tag" onclick="display.value += '7' ">
                             <input type="button" value="8" class="btn-Tag" onclick="display.value += '8' ">
                             <input type="button" value="9" class="btn-Tag" onclick="display.value += '9' ">
-                            <input type="button" value="x" class="btn-Tag" onclick="display.value += '×' ">
+                            <input type="button" value="*" class="btn-Tag" onclick="display.value += '*' ">
                         </div>
                         <div class="btn">
                             <input type="button" value="6" class="btn-Tag" onclick="display.value += '6' ">
                             <input type="button" value="5" class="btn-Tag" onclick="display.value += '5' ">
                             <input type="button" value="4" class="btn-Tag" onclick="display.value += '4' ">
-                            <input type="button" value="-" class="btn-Tag" onclick="display.value += '−' ">
+                            <input type="button" value="-" class="btn-Tag" onclick="display.value += '-' ">
                         </div>
                         <div class="btn">
                             <input type="button" value="3" class="btn-Tag" onclick="display.value += '3' ">
@@ -44,7 +45,7 @@
                         <div class="btn">
                             <input type="button" value="00" class="btn-Tag" onclick="display.value += '00' ">
                             <input type="button" value="0" class="btn-Tag" onclick="display.value += '0' ">
-                            <input type="button" value="=" class="btn-Tag zero" onclick="display.value += '=' ">
+                            <input type="button" value="=" class="btn-Tag zero" onclick="display.value = eval(display.value) ">
                         </div>
                     </div>
 
